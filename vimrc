@@ -79,3 +79,6 @@ set wildmenu
 "   - on second <Tab>, complete the next full match and show menu
 set wildmode=list:longest,full
 
+" reselect block after indent/outdent
+vnoremap < <gv
+vnoremap > >gv
