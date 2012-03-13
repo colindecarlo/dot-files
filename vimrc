@@ -41,7 +41,7 @@ set history=100
 set incsearch
 
 " set the status line
-set statusline=%(%h\ %f\ %m%r\ %y%)%=%(%l/%L\ %p%%%)
+set statusline=%(%h\ %f\ %m%r\ %y\ %{fugitive#statusline()}%)%=%(%l/%L\ %p%%%)
 
 " Always show status line, even for one window
 set laststatus=2
