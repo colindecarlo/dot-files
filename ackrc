@@ -1,2 +1,5 @@
 --type-set
 twig=.twig
+
+# make searches insensitive because I can't be bothered
+--ignore-case
