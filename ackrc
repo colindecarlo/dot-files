@@ -3,3 +3,8 @@ twig=.twig
 
 # make searches insensitive because I can't be bothered
 --ignore-case
+
+# ignore dumb directories (I don't think that it matters if the directory exists or not)
+--ignore-dir=secure/js
+--ignore-dir=secure/css
+--ignore-dir=build

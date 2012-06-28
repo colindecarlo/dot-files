@@ -85,3 +85,6 @@ vnoremap > >gv
 
 " search and replace the word under the cursor
 :nnoremap <Leader>s :%s/\<<C-r><C-w>\>//gc<Left><Left><Left>
+
+" awesome colorscheme
+colorscheme xoria256
