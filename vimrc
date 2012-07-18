@@ -41,7 +41,7 @@ set history=100
 set incsearch
 
 " set the status line
-set statusline=%(%h\ %f\ %m%r\ %y\ %{fugitive#statusline()}%)%=%(%l/%L\ %p%%%)
+set statusline=%(%h\ %f\ %m%r\ %y\ %{fugitive#statusline()}%)%=%(%c\ %l/%L\ %p%%%)
 
 " Always show status line, even for one window
 set laststatus=2
@@ -84,7 +84,13 @@ vnoremap < <gv
 vnoremap > >gv
 
 " search and replace the word under the cursor
-:nnoremap <Leader>s :%s/\<<C-r><C-w>\>//gc<Left><Left><Left>
+nnoremap <Leader>s :%s/\<<C-r><C-w>\>//gc<Left><Left><Left>
+
+" resize windows
+nnoremap <silent> + <C-w>+
+nnoremap <silent> - <C-w>-
+nnoremap <silent> > <C-w>>
+nnoremap <silent> < <C-w><
 
 " awesome colorscheme
 colorscheme xoria256
