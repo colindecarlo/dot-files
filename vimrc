@@ -92,5 +92,14 @@ nnoremap <silent> - <C-w>-
 nnoremap <silent> > <C-w>>
 nnoremap <silent> < <C-w><
 
+" muck with some bindings so tmux, vim and commandT play nice
+set ttimeoutlen=50
+
+if &term =~ "xterm" || &term =~ "screen"
+	let g:CommandTCancelMap = ['<ESC>', '<C-c>']
+	let g:CommandTSelectNextMap = ['<C-n>', '<C-j>', '<ESC>OB']
+	let g:CommandTSelectPrevMap = ['<C-p>', '<C-k>', '<ESC>OA']
+endif
+
 " awesome colorscheme
 colorscheme xoria256
