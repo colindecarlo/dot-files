@@ -1,6 +1,9 @@
 --type-set
 twig=.twig
 
+--type-set
+less=.less
+
 # make searches insensitive because I can't be bothered
 --ignore-case
 
