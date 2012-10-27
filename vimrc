@@ -103,3 +103,6 @@ endif
 
 " awesome colorscheme
 colorscheme xoria256
+
+" add syntax highlighting for less
+au BufNewFile,BufRead *.less set filetype=less
