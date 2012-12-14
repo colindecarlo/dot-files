@@ -4,6 +4,10 @@ autocmd bufwritepost .vimrc source $MYVIMRC
 " Set the <Leader> for combo commands
 let mapleader = ","
 
+" I don't need no stinking error bells
+set noerrorbells visualbell t_vb=
+autocmd GUIEnter * set visualbell t_vb=
+
 " paste toggling
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
