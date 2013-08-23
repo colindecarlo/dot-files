@@ -1,3 +1,7 @@
+" start pathogen
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+execute pathogen#infect()
+
 " Source the vimrc after saving it
 autocmd bufwritepost .vimrc source $MYVIMRC
 
@@ -106,7 +110,32 @@ if &term =~ "xterm" || &term =~ "screen"
 endif
 
 " awesome colorscheme
-colorscheme xoria256
+colorscheme wombat256mod
 
 " add syntax highlighting for less
 au BufNewFile,BufRead *.less set filetype=less
+
+" NERD_tree
+map <F7> :NERDTreeToggle<CR>
+set clipboard=unnamed
+
+" Vdebug options
+let g:vdebug_options = {
+			\  'path_maps': {'/mnt/hgfs/Users/colin/development/fb': '/Users/colin/development/fb', '/mnt/host/personal': '/Users/colin/development/personal'},
+			\  'server': '0.0.0.0',
+			\  'idekey': 'XDEBUG_VIM',
+			\}
+
+" CTags
+" Generate ctags
+map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
+
+" Go to the next tag.
+map <C-\> :tnext<CR>
+
+" CTags
+let tlist_php_settings = 'php;c:class;d:constant;f:function'
+
+" fugitive stuff
+map <Leader>gs :Gstatus<CR>
+
