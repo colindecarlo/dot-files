@@ -113,6 +113,14 @@ au BufNewFile,BufRead *.less set filetype=less
 
 " NERD_tree
 map <F7> :NERDTreeToggle<CR>
+set clipboard=unnamed
+
+" Vdebug options
+let g:vdebug_options = {
+			\  'path_maps': {'/mnt/hgfs/Users/colin/development/fb': '/Users/colin/development/fb', '/mnt/host/personal': '/Users/colin/development/personal'},
+			\  'server': '0.0.0.0',
+			\  'idekey': 'XDEBUG_VIM',
+			\}
 
 " CTags
 " Generate ctags
@@ -123,3 +131,7 @@ map <C-\> :tnext<CR>
 
 " CTags
 let tlist_php_settings = 'php;c:class;d:constant;f:function'
+
+" fugitive stuff
+map <Leader>gs :Gstatus<CR>
+
