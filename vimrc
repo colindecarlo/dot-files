@@ -110,7 +110,8 @@ if &term =~ "xterm" || &term =~ "screen"
 endif
 
 " awesome colorscheme
-colorscheme wombat256mod
+set background=dark
+colorscheme solarized
 
 " add syntax highlighting for less
 au BufNewFile,BufRead *.less set filetype=less
