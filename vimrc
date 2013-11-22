@@ -139,3 +139,5 @@ let tlist_php_settings = 'php;c:class;d:constant;f:function'
 " fugitive stuff
 map <Leader>gs :Gstatus<CR>
 
+" twig syntax highlighting
+au BufRead,BufNewFile *.twig set filetype=htmljinja
