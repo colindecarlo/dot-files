@@ -142,3 +142,7 @@ map <Leader>gs :Gstatus<CR>
 
 " twig syntax highlighting
 au BufRead,BufNewFile *.twig set filetype=htmljinja
+
+" pdv
+let g:pdv_template_dir = $HOME . "/.vim/bundle/pdv/templates_snip"
+nnoremap <buffer> <C-p> :call pdv#DocumentWithSnip()<CR>
